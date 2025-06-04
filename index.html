@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Головна секція  -->
+  <main>
+    <form id="simpleform">
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <div class="error" id="erroremail" style="display:none;color:red;">Введіть коректний Email</div>
+
+      <input type="password" id="password" name="password" placeholder="Пароль" required>
+      <div class="error" id="errorpassword" style="display:none;color:red;">Пароль має бути щонайменше 5 символів
+        та містити щонайменше одну велику літеру та одне число</div>
+
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Підтвердження паролю" required>
+      <div class="error" id="errorconfirm" style="display:none;color:red;">Пароль та підтвердження паролю не
+        співпадають</div>
+
+      <div class="agreement-container">
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">Я згоден з умовами ліцензійної угоди</label>
+      </div>
+
+      <button type="submit" disabled>Відправити</button>
+    </form>
+  </main>
+
+</body>
+
+</html>
